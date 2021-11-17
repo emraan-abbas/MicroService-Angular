@@ -1,0 +1,56 @@
+<!--
+<div class="main-div">
+
+<h1>Login Here !</h1>
+
+<form  [formGroup]="loginForm" (ngSubmit)="loginUser()">
+
+    <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" name="email" formControlName="email">
+      </mat-form-field>
+
+      <br><br>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" name="password" formControlName="password">
+      </mat-form-field>
+
+      <br><br>
+
+    <button type="submit" mat-raised-button color="primary">Log In</button>
+</form>
+<br/>
+<h3>OR</h3>
+<button type="submit" mat-raised-button color="primary" routerLink="/register">Register Here</button>
+</div>
+
+-->
+
+<div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Log In</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" type="email" name="email" formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" type="password" name="password" formControlName="password">
+        </mat-form-field>
+
+      </mat-card-content>
+
+      <button mat-stroked-button color="accent" class="btn-block">Login</button>
+      <h3 id="h3">OR</h3>
+      <button mat-stroked-button color="accent" class="btn-block" routerLink="/register">Register Here</button>
+
+    </form>
+  </mat-card>
+</div>

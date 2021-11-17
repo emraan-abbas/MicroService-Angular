@@ -1,0 +1,43 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    height: 100%
+  }
+
+
+  mat-sidenav, mat-sidenav-content {
+    padding: 16px;
+  }
+
+  mat-sidenav {
+    width: 250px;
+    background-color: #FF4081;
+  }
+
+
+  .tr {
+    border-spacing: 5cm;
+    padding-top: 10cm;
+  }
+
+  .font{
+    font-family: 'Pacifico', serif;
+    font-size: 60px;
+    color: #c23616;
+
+    margin: auto;
+    width: 50%;
+    margin-top: -40px;
+    position: fixed;
+    padding-left: 1000px;
+  }
+
+  .font2{
+    font-family: 'arial', serif, bold;
+    font-size: 30px;
+    color: #C0392B;
+  }

@@ -1,0 +1,32 @@
+<div class="main-div">
+    <div class="notecontainer">
+        <form [formGroup]="editNote" (ngSubmit)="edit()">
+    
+          <mat-form-field appearance="fill">
+            <mat-label>Enter ID to Edit</mat-label>
+            <input matInput type="text" name="text" formControlName="id">
+          </mat-form-field>
+          <br><br>
+          <button type="submit" mat-raised-button color="primary">Edit Note</button>
+        </form>
+      </div>
+       <br><br>
+
+       <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Subject</th>
+            <th scope="col">Title</th>
+            <th scope="col">Content</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let note of notes">
+            <td>{{ note.subject }}</td>
+            <td>{{ note.title }}</td>
+            <td>{{ note.content }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>

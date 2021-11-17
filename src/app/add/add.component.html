@@ -1,0 +1,56 @@
+<!--
+<div class="main-id">
+    <div class="notecontainer">
+        <form [formGroup]="addNote" (ngSubmit)="add()">
+    
+          <mat-form-field appearance="fill">
+            <mat-label>Subject</mat-label>
+            <input matInput type="text" name="text" formControlName="subject">
+          </mat-form-field>
+          <br><br>
+          <mat-form-field appearance="fill">
+            <mat-label>Title</mat-label>
+            <input matInput type="text" name="text" formControlName="title">
+          </mat-form-field>
+          <br><br>
+          <mat-form-field appearance="fill">
+            <mat-label>Content</mat-label>
+            <input matInput type="text" name="text" formControlName="content">
+          </mat-form-field>
+          <br><br>
+          <button type="submit" mat-raised-button color="primary">Add Note</button>
+        </form>
+      </div>
+</div>
+-->
+
+
+
+<div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Create Your Note</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" [formGroup]="addNote" (ngSubmit)="add()">
+
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Subject" type="text" name="text" formControlName="subject">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Title" type="text" name="text" formControlName="title">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Content" type="text" name="text" formControlName="content">
+        </mat-form-field>
+
+      </mat-card-content>
+
+      <button mat-stroked-button color="accent" class="btn-block">Add</button>
+
+    </form>
+  </mat-card>
+</div>

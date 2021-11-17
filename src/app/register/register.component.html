@@ -1,0 +1,81 @@
+<div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Register</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" [formGroup]="registerationForm" (ngSubmit)="registerUser()">
+
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Firstname" type="text" name="firstName" formControlName="firstName">
+        </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Lastname" type="text" name="lastName" formControlName="lastName">
+          </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" type="email" name="email" formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" type="password" name="password" formControlName="password">
+        </mat-form-field>
+
+
+      </mat-card-content>
+
+      <button mat-stroked-button color="accent" class="btn-block">Register</button>
+      <h3 id="h3">OR</h3>
+      <button mat-stroked-button color="accent" class="btn-block" routerLink="/login">Login Here !</button>
+
+    </form>
+  </mat-card>
+</div>
+
+
+<!--
+
+<div class="main-div">
+<h1>Register Here !</h1>
+
+<form  [formGroup]="registerationForm" (ngSubmit)="registerUser()">
+
+    <mat-form-field appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input matInput type="text" name="firstName" formControlName="firstName">
+      </mat-form-field>
+
+      <br><br>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" name="lastName" formControlName="lastName">
+      </mat-form-field>
+
+      <br><br>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" name="email" formControlName="email">
+      </mat-form-field>
+
+      <br><br>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" name="password" formControlName="password">
+      </mat-form-field>
+
+      <br><br>
+
+    <button type="submit" mat-raised-button color="primary">Register</button>
+</form>
+<br/>
+<h3>OR</h3>
+<button type="submit" mat-raised-button color="primary" routerLink="/login">Login Here</button>
+
+</div>
+
+-->

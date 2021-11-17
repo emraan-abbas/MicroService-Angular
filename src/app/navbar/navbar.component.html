@@ -1,0 +1,52 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="over" [(opened)]="opened">
+    <h1 class="font2">Nav Bar</h1>
+
+    <button mat-fab color="primary" routerLink="add">
+      <span class="material-icons"> add </span>
+    </button>
+
+    <br /><br />
+
+    <button mat-fab color="primary" routerLink="view">
+      <span class="material-icons"> view_list </span>
+    </button>
+
+    <br /><br />
+
+    <button mat-fab color="primary" routerLink="search">
+      <span class="material-icons"> search </span>
+    </button>
+
+    <br /><br />
+
+    <button mat-fab color="primary" routerLink="edit">
+      <span class="material-icons"> edit </span>
+    </button>
+
+    <br /><br />
+
+    <button mat-fab color="primary" routerLink="delete">
+      <span class="material-icons"> delete </span>
+    </button>
+
+    <br /><br />
+
+    <button mat-fab color="primary" (click)="logout()" routerLink="">
+      <span class="material-icons">logout</span>
+    </button>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    
+    <button (click)="opened = !opened" mat-fab color="primary">
+      <span class="material-icons"> open_in_new </span>
+    </button>
+
+    <h1 class="font">Welcome to My Notes !</h1>
+
+    <router-outlet></router-outlet>
+  
+  </mat-sidenav-content>
+</mat-sidenav-container>
